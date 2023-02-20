@@ -46,6 +46,7 @@ const Preview = ({ result, user }) => {
           name="description"
           content="mylinkup ( Single place to store all your social media links )"
         />
+        <script async defer src="https://analytics.umami.is/script.js" data-website-id="0e9ee61e-c00c-4310-8179-15c20d2dca40"></script>
       </Head>
       <div className=" poppins">
         <Header/>

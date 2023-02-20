@@ -66,6 +66,7 @@ export default function Home() {
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <script async defer src="https://analytics.umami.is/script.js" data-website-id="0e9ee61e-c00c-4310-8179-15c20d2dca40"></script>
       </Head>
       <main className="poppins min-h-[100vh] flex flex-col justify-between">
         {authverify ? <Alert verify={true} /> : <></>}
