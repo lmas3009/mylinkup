@@ -6,6 +6,7 @@ import Link from "next/link";
 import Router, { useRouter } from "next/router";
 import { useEffect } from "react";
 import { BiWindowOpen } from "react-icons/bi";
+import Header from "./header";
 
 export async function getServerSideProps(context) {
   let result = [];
@@ -46,7 +47,9 @@ const Preview = ({ result, user }) => {
           content="mylinkup ( Single place to store all your social media links )"
         />
       </Head>
-      <div className="p-10 poppins">
+      <div className=" poppins">
+        <Header/>
+        <div className="p-5 sm:p-10">
         <div className="flex items-center gap-2">
           <img
             className="h-14 w-14 bg-black rounded-full"
@@ -106,6 +109,7 @@ const Preview = ({ result, user }) => {
             </span>
           </p>
         </footer>
+        </div>
       </div>
     </>
   );
