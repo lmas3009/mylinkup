@@ -9,7 +9,7 @@ import Image from "next/image";
 const Card = ({ data, key1 }) => {
   return (
     <div
-      className="h-max w-max border-2 border-black rounded p-5 flex items-center justify-between gap-20"
+      className="h-max w-max border-2 border-black rounded p-5 flex items-center justify-between gap-7 sm:gap-20"
       key={key1}
     >
       <div className="flex items-center gap-2">
@@ -20,7 +20,9 @@ const Card = ({ data, key1 }) => {
           width={50}
           className="h-10 w-10 bg-black rounded-full"
         />
-        <p>{data?.Slug}</p>
+        <p className="text-ellipsis overflow-hidden whitespace-nowrap w-28 sm:w-full">
+          {data?.Slug}
+        </p>
       </div>
       <div className="flex items-center gap-2">
         <Link href={"/p/" + data?.Slug} target={"_blank"}>
